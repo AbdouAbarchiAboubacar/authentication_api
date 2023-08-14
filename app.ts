@@ -8,6 +8,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(require("@routes/main.routes"));
+app.use(require("@routes/authentication.routes"));
 app.use(errorHandlers.notFound);
 //
 
